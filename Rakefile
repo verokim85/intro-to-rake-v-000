@@ -13,7 +13,7 @@ namespace :db do
   desc 'migrate changes to your database'
   task :migrate => :environment do
     require_relative './config/environment'
-    Student.create_table
+    # Student.create_table
   end
   desc 'seed the database with some dummy data'
   task :seed do
@@ -24,3 +24,4 @@ task :console => :environment do
   Pry.start
 end
 end
+# 
